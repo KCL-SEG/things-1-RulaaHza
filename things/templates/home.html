@@ -5,5 +5,10 @@
 </head>
 <body>
     <h1>Things</h1>
+    <ul>
+        {% for thing in things %}
+            <li>{{ thing.name }} - {{ thing.description }} - Quantity: {{ thing.quantity }}</li>
+        {% endfor %}
+    </ul>
 </body>
 </html>
